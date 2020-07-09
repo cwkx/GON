@@ -1,10 +1,13 @@
 # Gradient Origin Networks
 
-*This paper proposes a new type of implicit generative model that is able to quickly learn a latent representation without an explicit encoder. This is achieved with an implicit neural network that takes as inputs points in the coordinate space alongside a latent vector initialised with zeros. The gradients of the data fitting loss with respect to this zero vector are jointly optimised to act as latent points that capture the data manifold. The results show similar characteristics to autoencoders, but with fewer parameters and the advantages of implicit representation networks.*
+This paper proposes a new type of implicit generative model that is able to quickly learn a latent representation without an explicit encoder. This is achieved with an implicit neural network that takes as inputs points in the coordinate space alongside a latent vector initialised with zeros. The gradients of the data fitting loss with respect to this zero vector are jointly optimised to act as latent points that capture the data manifold. The results show similar characteristics to autoencoders, but with fewer parameters and the advantages of implicit representation networks.
 
 [![Explore Siren in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/cwkx/8c3a8b514f3bdfe123edc3bb0e6b7eca/gon.ipynb)<br>
 
-The code is available in [GON.py](GON.py) and licensed under the MIT license. For more information, including links to the original paper, please visit the [Project Page](https://cwkx.github.io/data/GON/).
+The code is available in [GON.py](GON.py) and licensed under the MIT license. For more information, please visit the [Project Page](https://cwkx.github.io/data/GON/). Here is a [link to the paper](https://arxiv.org/pdf/2007.02798.pdf). 
+
+[![YouTube Preview](VIDEO.gif)](https://www.youtube.com/watch?v=ro7t98Q1gXg)
+
 
 ## Citation
 If you find this useful, please cite:
