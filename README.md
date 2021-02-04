@@ -1,6 +1,8 @@
 # Gradient Origin Networks
 
-This paper proposes a new type of generative model that is able to quickly learn a latent representation without an encoder. This is achieved by initialising a latent vector with zeros, then using gradients of the data fitting loss with respect to this zero vector as new latent points. The approach has similar characteristics to autoencoders but with a simpler naturally balanced architecture, and is demonstrated in a variational autoencoder equivalent that permits sampling. This also allows implicit representation networks to learn a space of implicit functions without requiring a hypernetwork, retaining their representation advantages with fewer parameters.
+This paper has been accepted at ICLR 2021.
+
+This paper proposes a new type of generative model that is able to quickly learn a latent representation without an encoder. This is achieved using empirical Bayes to calculate the expectation of the posterior, which is implemented by initialising a latent vector with zeros, then using the gradient of the log-likelihood of the data with respect to this zero vector as new latent points. The approach has similar characteristics to autoencoders, but with a simpler architecture, and is demonstrated in a variational autoencoder equivalent that permits sampling. This also allows implicit representation networks to learn a space of implicit functions without requiring a hypernetwork, retaining their representation advantages across datasets. The experiments show that the proposed method converges faster, with significantly lower reconstruction error than autoencoders, while requiring half the parameters.
 
 [![GON](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/samb-t/fbac83a2ec9312616ed61cd74dac50ce/gon.ipynb) **(GON)** <br>
 
@@ -16,10 +18,11 @@ The code is available in [GON.py](GON.py) and licensed under the MIT license. Fo
 ## Citation
 If you find this useful, please cite:
 ```
-@article{bondtaylor2020gradient,
-  title={Gradient Origin Networks},
-  author={Sam Bond-Taylor and Chris G. Willcocks},
-  journal={arXiv preprint arXiv:2007.02798},
-  year={2020}
+@inproceedings{bond2020gradient,
+   title     = {Gradient Origin Networks},
+   author    = {Sam Bond-Taylor and Chris G. Willcocks},
+   booktitle = {International Conference on Learning Representations},
+   year      = {2021},
+   url       = {https://openreview.net/pdf?id=0O_cQfw6uEh}
 }
 ```
